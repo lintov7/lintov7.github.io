@@ -41,8 +41,12 @@ html, body {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+#main_img_container img{
+  width: 100%;
+  max-width: 400px;
+}
 #uname{
-  font-size: 6rem;
+  font-size: 6vw;
   line-height: 1;
   margin-bottom: 2rem;
 }
@@ -265,6 +269,7 @@ border: 1px solid rgb(196, 196, 196);
 }
 
 .tags {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -427,4 +432,23 @@ footer .icon:hover {
 footer  a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  #uname {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #main_img_container img{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main_img_container img{
+    margin-top: 2rem;
+  }
+  .tags{
+    margin-top: 1rem;
+  }
 }
