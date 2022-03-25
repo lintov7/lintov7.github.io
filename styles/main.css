@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 html, body {
   font-family: 'Montserrat', sans-serif;
@@ -74,19 +74,25 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.project{
+  border-bottom: 5px solid rgb(0, 96, 160);
+}
 
 .project-title{
   margin-top: 2rem;
   color: #003858;
+  text-align: left;
 }
 .project-subtitle{
   color: #3f3f3f;
   font-size: 1.1rem;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .card-section-top{
-  background-color: rgb(245, 245, 245);
+  background-color: #eef5ff;
+  border-radius: 6px 6px 0 0 ;
   border-bottom: 1px solid rgb(240, 240, 240);
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -118,8 +124,41 @@ h1,h2,h3{
   padding-left: 15px;
   padding-right: 15px;
 }
+.ptitle-container{
+  margin-top: 1rem;
+  margin-bottom: 1em;
+  /* margin-left: 180px; */
+  text-align: center;
+}
+.ptitle-container > div{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.features-container{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.p-description{
+  margin-left: 15px;
+}
 .ptitle{
-  font-weight: 600;
+  color: #003c81;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: .9;
+}
+.psubtitle{
+  color:#666666;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.pcontent{
+  font-weight: 400;
+  margin-top: .5rem;
+  font-size: .95rem;
 }
 .picon{
   width: 100px;
@@ -131,22 +170,31 @@ h1,h2,h3{
   font-size: 1rem;
 }
 .p-main-image{
-  padding-top: 3rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
+  background-color: #647f8e ;
+}
+.p-image-container{
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
-  background-color: #003858 ;
 }
 
 .p-main-image img{
   width: 200px;
-  margin:10px;
-  
+  margin:5px;
+  }
+  .flow-chart-container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .border-black{
     border: 1px solid black;
+  }
+  .p-heading-off{
+    color:white;
   }
 
   .color-scheme{
@@ -160,8 +208,33 @@ h1,h2,h3{
     border: 1px solid rgb(136, 136, 136);
     border-radius: 50%;
   }
-  
 
+  .features-container .card{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .features-container-body{
+    margin-top: 1rem;
+    justify-content: space-around;
+  }
+  .affirmations-feature-container .card-icon{
+    color: #673ab7
+  }
+  .foodeaze-feature-container .card-icon{
+    color: #568187
+  }
+  .projectmanager-feature-container .card-icon {
+    color: #c9441a;
+  }
+  .tiffinseevice-feature-container .card-icon {
+    color: #4CAF50;
+  }
+
+.card-icon{
+  font-size: 2rem;
+}
 .p-wireframes {
   display: flex;
   flex-wrap:wrap;
@@ -217,6 +290,117 @@ border: 1px solid rgb(196, 196, 196);
   color: white;
 }
 
+.main-heading{
+  margin-top: 2rem;
+  margin-bottom: .1rem;
+}
+.about-main-heading{
+  font-size: 1.6rem;
+}
+
+.about-main-heading i{
+  margin-right: 10px;
+  margin-top: 1.5rem;
+}
+.timeline{
+  position: relative;
+  margin-top: .5rem;
+}
+
+.timeline::before{
+  content: " ";
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  bottom: 5px;
+  border: 1px solid #5c6bc048;
+}
+
+.timeline-content{
+  margin-left: 80px;
+  margin-top: 1.5rem;
+}
+
+
+.timeline-content::before{
+  content: " ";
+  position: absolute;
+  left: 25px;
+  /* top: 5px; */
+  margin-top: 6px;
+  border:  6px solid #5c6bc0;
+  border-radius: 50%;
+}
+
+.timeline-time{
+  font-size: 1rem;
+  color: #5c6bc0;
+}
+
+.timeline .subheading{
+  margin-top: .5rem;
+  font-size: 1.4rem;
+  color: #3949ab;
+  font-weight: 500;
+  
+}
+
+.timeline .subsubheading{
+  font-size: 1rem;
+  color:#3f51b5;
+}
+
+.timeline .position{
+  font-size: 1.1rem;
+  color:#003c81;
+  margin-bottom: .5rem;
+}
+
+.p-row-image{
+  text-align: left;
+  width: 100%;
+  max-width: 200px;
+  margin-right: auto;
+}
+
+.store-link img{
+  display: hidden;
+  margin-top: 1.5rem;
+  margin-left: 7px;
+  width: 150px;
+}
+
+.drop-mail{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  width: 70%;
+  text-align: center;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.drop-mail i{
+  font-size: 2.5rem;
+  color:#f44336;
+}
+
+.drop-mail a {
+  display: inline-block;
+  margin-top: 1rem;
+  color:#f44336;
+  text-decoration:  none;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+.drop-mail a:hover{
+  text-decoration:  underline;
+}
+
 footer {
     text-align: center;
     padding-top: 15px;
@@ -243,5 +427,4 @@ footer .icon:hover {
 footer  a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-
 }
